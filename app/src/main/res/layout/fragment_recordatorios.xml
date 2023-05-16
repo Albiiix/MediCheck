@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
+    tools:context=".RecordatoriosFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recordatorios"
+            android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/texto_recordatorios"
+            android:text="Esta semana"
+            android:textAlignment="center"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lunes"
+                            android:text="Lunes"
+                            android:textStyle="bold"/>
+
+                        <ListView
+                            android:id="@+id/listview_lunes"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"/>
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/martes"
+                        android:text="Martes"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_martes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/miercoles"
+                        android:text="Miércoles"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_miercoles"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jueves"
+                        android:text="Jueves"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_jueves"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/viernes"
+                        android:text="Viernes"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_viernes"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sabado"
+                        android:text="Sábado"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_sabado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/domingo"
+                        android:text="Domingo"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_domingo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lunes2"
+                        android:text="Lunes"
+                        android:textStyle="bold"/>
+
+                    <ListView
+                        android:id="@+id/listview_lunes2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:layout_marginBottom="55dp"/>
+
+                </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+
+</FrameLayout>

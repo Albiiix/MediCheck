@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_dialog">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:src="@drawable/ic_baseline_remove"
+        android:scaleType="centerCrop"
+        app:tint="?attr/colorPrimaryVariant" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/añadir_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="Añadir nuevo: "
+            android:padding="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="28dp"
+            android:textColor="?attr/colorOnSecondary"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/medicamento_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/kit_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicamento"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cita_medica_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/hospital_tool_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cita médica"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/medida_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/history_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medida"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/recordatorio_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/alarm_clock_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordatorio"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cancel_option"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/exit_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:textColor="?attr/colorOnSecondary"/>
+
+    </LinearLayout>
+</LinearLayout>

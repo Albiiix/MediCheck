@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/estanteria"
+        android:title="Medicamentos"
+        android:icon="@drawable/botiquin"/>
+    <item
+        android:id="@+id/calendario"
+        android:title="Calendario"
+        android:icon="@drawable/event_icon"/>
+    <item
+        android:title="" />
+    <item
+        android:id="@+id/recordatorios"
+        android:title="Alarmas"
+        android:icon="@drawable/alarm_clock_icon"/>
+    <item
+        android:id="@+id/analisis"
+        android:title="Análisis"
+        android:icon="@drawable/bar_icon"/>
+</menu>

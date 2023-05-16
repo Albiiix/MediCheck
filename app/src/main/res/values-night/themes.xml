@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediCheck" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/spring</item>
+        <item name="colorPrimaryVariant">@color/terra</item>
+        <item name="colorOnPrimary">@color/dark_cool_grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/baby_blue</item>
+        <item name="colorSecondaryVariant">@color/opal</item>
+        <item name="colorOnSecondary">@color/dark_cool_grey</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

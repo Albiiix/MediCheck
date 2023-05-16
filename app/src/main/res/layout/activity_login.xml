@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="?attr/colorOnPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:text="Bienvenido a MediCheck"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/continuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicia sesión para continuar"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:textSize="23sp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="?attr/colorPrimary"
+                    android:hint="Email"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usuarioCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/akaya_telivigala" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Contraseña"
+                    android:textColorHint="?attr/colorPrimary"
+                    app:passwordToggleEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usuarioPassw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/akaya_telivigala"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/olvido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:textColor="?attr/colorSecondary"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="¿Olvidaste tu contraseña?"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inicioSesion"
+                    android:text="INICIAR"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="40dp"/>
+
+                <TextView
+                    android:id="@+id/nuevoUsuario"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/akaya_telivigala"
+                    android:layout_gravity="center"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textStyle="bold"
+                    android:text="¿Nuevo usuario? Regístrate"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

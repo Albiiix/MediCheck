@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:id="@+id/drawer_layout"
+    android:background="?attr/colorSecondaryVariant"
+    android:fitsSystemWindows="false">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnPrimary"
+        android:id="@+id/nav_view_2"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/side_menu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame_layout">
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/profile_bg"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/avatar"
+                    android:id="@+id/avatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/profile_name"
+                    android:text="Nombre"
+                    android:textAlignment="center"
+                    android:textSize="26sp"
+                    android:textColor="?attr/colorOnSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/profileinfo_bg"
+                    android:elevation="5dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:fontFamily="@font/akaya_telivigala"
+                            android:textSize="23sp"
+                            android:id="@+id/profile_email"
+                            android:textColor="?attr/colorPrimary"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre"
+                            android:fontFamily="@font/akaya_telivigala"
+                            android:textSize="23sp"
+                            android:id="@+id/profile_nombre"
+                            android:textColor="?attr/colorPrimary"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de nacimiento"
+                        android:textSize="23sp"
+                        android:fontFamily="@font/akaya_telivigala"
+                        android:textColor="?attr/colorPrimary"
+                        style="?android:spinnerStyle"
+                        android:id="@+id/profile_nacimiento"
+                        android:layout_margin="10dp"
+                        />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guardar Cambios"
+                        android:id="@+id/guardar_cambios_profile"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

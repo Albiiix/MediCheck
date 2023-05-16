@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_settings"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/arrow_back"
+                android:padding="10dp"
+                app:tint="?attr/colorOnSecondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajustes"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:fontFamily="@font/akaya_telivigala"
+                />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/preferences_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="@drawable/background_claro">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/night_mode_icon"
+                            android:src="@drawable/night_mode"
+                            android:padding="10dp"
+                            android:background="@drawable/color_5_background_round"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_centerVertical="true"
+                            android:text="Modo oscuro"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@id/night_mode_icon"
+                            android:fontFamily="@font/akaya_telivigala"
+                            android:textSize="18dp"/>
+
+                        <Switch
+                            android:id="@+id/activate_dark_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:switchMinWidth="50dp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:background="@drawable/background_claro_2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/bote_icon"
+                            android:src="@drawable/bote_icon"
+                            android:padding="10dp"
+                            android:background="@drawable/color_1_background_round"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_centerVertical="true"
+                            android:text="Recargas"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@id/bote_icon"
+                            android:fontFamily="@font/akaya_telivigala"
+                            android:textSize="18dp"/>
+
+                        <Switch
+                            android:id="@+id/activate_recargas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:switchMinWidth="50dp"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

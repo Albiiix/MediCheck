@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorOnPrimary"
+    tools:context=".CalendarioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </CalendarView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/añadir_recordatorio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="+"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:drawableRight="@drawable/alarm_clock_icon"
+                android:drawableTint="?attr/colorOnPrimary"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ListView
+            android:id="@+id/listview_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
